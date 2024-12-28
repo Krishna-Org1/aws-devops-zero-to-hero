@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+echo "Executing stop container"
 # Stop the running container (if any)
 containerId=$(docker ps -q)
 
