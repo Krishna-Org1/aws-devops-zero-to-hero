@@ -11,4 +11,3 @@ if [ -n "$containerId" ]; then
 else
   echo "No container is running."
 fi
-
