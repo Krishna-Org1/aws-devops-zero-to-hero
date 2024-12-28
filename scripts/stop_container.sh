@@ -2,7 +2,7 @@
 set -e
 echo "Executing stop container"
 # Stop the running container (if any)
-containerId=$(docker ps | aws -F" " '{print $1}')
+containerId=$(docker ps | awk -F" " '{print $1}')
 
 if [ -n "$containerId" ]; then
   # Stop and remove all containers
